@@ -1,0 +1,142 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://www.marketingtechnews.net/wp-content/uploads/sites/6/2022/07/johannes-plenio-fmTde1Fe23A-unsplash.jpg') center/cover no-repeat fixed;
+    color: #333;
+}
+
+.header, .nav, .hero, .idea-list, .idea, .submit-idea-form, .footer {
+    margin: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    padding: 20px; 
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    color: #fff;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+.hero {
+    background-color: #4CAF50;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.idea-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.idea {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.33% - 20px);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.idea:hover {
+    transform: scale(1.05);
+}
+
+.idea h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.idea .author {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.idea .description {
+    color: #555;
+}
+
+.idea a {
+    display: block;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.submit-idea-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.submit-idea-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.submit-idea-form input,
+.submit-idea-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-idea-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.submit-idea-form button:hover {
+    background-color: #45a049;
+}
+
+.submit-idea-form a {
+    display: inline-block;
+    color: #4CAF50;
+    text-decoration: none;
+    margin-top: 10px;
+}

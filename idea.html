@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="idea.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <title>CrowdGenius Hub</title>
+</head>
+<body>
+    <header style="color:white"class="header">
+        <h1>Welcome to CrowdGenius Hub</h1>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2 style="color:white">Spark Creativity with Innovative Ideas</h2>
+            <p style="color:white">Join our community and explore a world of groundbreaking ideas.</p>
+        </div>
+    </section>
+    <section id="browse-ideas" class="idea-list">
+        <h2 style="color:White">Browse Ideas</h2>
+        <article class="idea">
+            <h3 style="color:purple">Idea Title 1</h3>
+            <p class="author">Submitted by: John Doe</p>
+            <p class="description">A brief description of the idea goes here...</p>
+            <a href="#idea-details">Read more</a>
+        </article>
+
+        <article class="idea">
+            <h3 style="color:purple">Idea Title 2</h3>
+            <p class="author">Submitted by: Jane Smith</p>
+            <p class="description">Another interesting idea description...</p>
+            <a href="#idea-details">Read more</a>
+        </article>
+
+        <!-- Repeat the above structure for additional ideas -->
+
+    </section>
+    <section id="submit-idea" class="submit-idea-form">
+       <form action="#" method="post" onsubmit="showThankYou(); return false;">
+        <h2>Submit Your Idea</h2>
+        <form action="#" method="post">
+            <label for="idea-title">Idea Title:</label>
+            <input type="text" id="idea-title" name="idea-title" required>
+
+            <label for="idea-description">Idea Description:</label>
+            <textarea id="idea-description" name="idea-description" rows="4" required></textarea>
+
+            <button type="submit">Submit Idea</button>
+        </form>
+    </section>
+<section id="thank-you-section" class="thank-you-container" style="display: none;">
+    <h2 style="color:white">Thank You for Your Idea Submission!</h2>
+    <p style="color:white">Your innovative idea has been successfully submitted. We appreciate your contribution to our community.</p>
+</section>
+<script>
+    function showThankYou() {
+        document.getElementById('submit-idea').style.display = 'none';
+        document.getElementById('thank-you-section').style.display = 'block';
+    }
+</script>
+
+    <footer class="footer">
+        <p>&copy; 2023 CrowdGenius Hub. All rights reserved.</p>
+
+    </footer>
+</body>
+</html>
